@@ -1,0 +1,395 @@
+body{
+    background: linear-gradient(45deg, #df25df 0%, #3498db 33%, #9b59b6 66%, #1abc9c 100%);
+    color: #fff;
+}
+
+.headpage{
+    text-align: center;
+}
+
+nav {
+    font-weight: 600;
+    margin: 27px auto 0;
+    position: relative;
+    width: 487px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid black;
+    box-shadow: black 4px 4px 0 0;
+    color: black;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+nav a {
+    line-height: 50px;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 100px;
+}
+
+a:nth-child(1) {
+    width: 118px;
+}
+
+a:nth-child(2) {
+    width: 118px;
+}
+
+a:nth-child(3) {
+    width: 118px;
+}
+
+a:nth-child(4) {
+    width: 119px;
+}
+
+nav .start-home,
+a:nth-child(1):hover~.animation {
+    width: 127px;
+    left: 0;
+    background-color: #1abc9c;
+    
+}
+
+nav .start-about,
+a:nth-child(2):hover~.animation {
+    width: 127px;
+    left: 118px;
+    background-color: #df25df;
+}
+
+nav .start-blog,
+a:nth-child(3):hover~.animation {
+    width: 127px;
+    left: 240px;
+    background-color: #3498db;
+}
+
+nav .start-portefolio,
+a:nth-child(4):hover~.animation {
+    width: 127px;
+    left: 360px;
+    background-color: #9b59b6;
+}
+
+.pic-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.pic-name img {
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px; 
+}
+
+.pic-name .name,
+.pic-name .introduce {
+    display: flex;
+    flex-direction: column;
+}
+
+.pic-name .name h1 {
+    font-size: 40px;
+    margin-top: -5px;
+}
+
+.pic-name .introduce p {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.button-about {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 13px;
+    padding: auto;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: black 4px 4px 0 0;
+    color: black;
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+}
+
+.button-about i {
+    margin-left: 5px;
+}
+
+.button-about:hover {
+    background-color: #fff;
+}
+
+.button-about:active {
+    box-shadow: black 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@media (max-width: 768px) {
+    .pic-name {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .pic-name {
+        margin: 10px;
+    }
+}
+
+.about-bio {
+    text-align: center;
+}
+
+.aboutme{
+    margin-top: 10%;
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+.biog{
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.aboutme, .biog {
+    text-align: center;
+
+}
+
+@media (max-width: 768px) {
+    .aboutme, .biog {
+        margin: 10px;
+    }
+}
+
+.about-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.edu-info{
+    padding: 50px;
+    margin: 50px;
+    width: 250px;
+    height: 380px;
+    background-color: #fff;
+    border: 1px solid black;
+    box-shadow: black 4px 4px 0 0;
+    color: black;
+    border-radius: 50px
+}
+
+.edu-info .icon{
+    text-align: center;
+}
+.edu-info .edu{
+    font-size: large;
+    text-align: center;
+}
+
+.pro-skills{
+    padding: 50px;
+    margin: 50px;
+    width: 250px;
+    height: 380px;
+    background-color: #fff;
+    border: 1px solid black;
+    box-shadow: black 4px 4px 0 0;
+    color: black;
+    border-radius: 50px
+}
+
+.pro-skills .programmingskill{
+    font-size: large;
+    text-align: center;
+}
+
+.pro-skills .icon{
+    text-align: center;
+}
+
+.basic .skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.basic .skills .s1,
+.basic .skills .s2,
+.basic .skills .s3 {
+    text-align: center;
+    line-height: 26px;
+    width: 70px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 50px
+}
+
+.intermediate .skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.intermediate .skills .s1,
+.intermediate .skills .s2,
+.intermediate .skills .s3,
+.intermediate .skills .s4{
+    text-align: center;
+    line-height: 26px;
+    width: 70px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.intermediate .skills .s4{
+    margin-top: 5px;
+}
+
+.studying .skills .s1{
+    text-align: center;
+    line-height: 26px;
+    width: 70px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.languages{
+    padding: 50px;
+    margin: 50px;
+    width: 250px;
+    height: 380px;
+    background-color: #fff;
+    border: 1px solid black;
+    box-shadow: black 4px 4px 0 0;
+    color: black;
+    border-radius: 50px
+}
+
+.languages .icon{
+    text-align: center;
+}
+
+.languages .lang{
+    text-align: center;
+}
+
+.languages ul li p{
+    text-align: center;
+    line-height: 26px;
+    width: 70px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.edu-info,
+.pro-skills,
+.languages {
+    letter-spacing: none;
+}
+
+.edu-info:hover,
+.pro-skills:hover,
+.languages:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+#sec3 .port{
+    margin-top: 10%;
+    margin-bottom: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#sec3 .one, 
+#sec3 .two, 
+#sec3 .three, 
+#sec3 .four {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    align-items: center;
+    border-bottom: 2px solid #fff5;
+    padding-bottom: 20px;
+    
+}
+
+.section three .left {
+    padding: 20px;
+}
+
+.right {
+    padding: 20px;    
+}
+
+#sec3 .name:hover {
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+  
+  
+  
