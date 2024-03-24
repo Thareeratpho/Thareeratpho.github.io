@@ -115,21 +115,21 @@ a:nth-child(4):hover~.animation {
     nav .start-about,
     a:nth-child(2):hover~.animation {
         width: 90px; /* Adjust width */
-        left: 110px;
+        left: 85px;
         background-color: #df25df;
     }
     
     nav .start-blog,
     a:nth-child(3):hover~.animation {
         width: 90px; /* Adjust width */
-        left: 220px;
+        left: 175px;
         background-color: #3498db;
     }
     
     nav .start-portefolio,
     a:nth-child(4):hover~.animation {
         width: 90px; /* Adjust width */
-        left: 330px;
+        left: 260px;
         background-color: #9b59b6;
     }
 }
@@ -208,8 +208,11 @@ a:nth-child(4):hover~.animation {
     .pic-name .name{
         margin-top: 40px;
     }
+    .pic-name img{
+        margin: 0px;
+        text-align: center;
+    }
 }
-
 
 .about-bio {
     text-align: center;
@@ -229,13 +232,6 @@ a:nth-child(4):hover~.animation {
 .aboutme, .biog {
     text-align: center;
 
-}
-
-@media (max-width: 768px) {
-    .aboutme, .biog {
-        text-align: center;
-        margin: 10px;
-    }
 }
 
 .about-box{
@@ -441,11 +437,10 @@ a:nth-child(4):hover~.animation {
     }
 }
 
-#sec3 .more{
+#sec3 .more {
     font-weight: 600;
-    font-size: 13px;
-    padding: 5px;
-    padding-top: 10px;
+    font-size: 11px; /* Adjusted font size */
+    padding: 3px 10px; /* Adjusted padding */
     text-align: center;
     text-decoration: none;
     height: 20px;
