@@ -107,28 +107,28 @@ a:nth-child(4):hover~.animation {
     
     nav .start-home,
     a:nth-child(1):hover~.animation {
-        width: 110px; /* Adjust width */
+        width: 90px; /* Adjust width */
         left: 0;
         background-color: #1abc9c;
     }
 
     nav .start-about,
     a:nth-child(2):hover~.animation {
-        width: 110px; /* Adjust width */
+        width: 90px; /* Adjust width */
         left: 110px;
         background-color: #df25df;
     }
     
     nav .start-blog,
     a:nth-child(3):hover~.animation {
-        width: 110px; /* Adjust width */
+        width: 90px; /* Adjust width */
         left: 220px;
         background-color: #3498db;
     }
     
     nav .start-portefolio,
     a:nth-child(4):hover~.animation {
-        width: 110px; /* Adjust width */
+        width: 90px; /* Adjust width */
         left: 330px;
         background-color: #9b59b6;
     }
@@ -202,14 +202,6 @@ a:nth-child(4):hover~.animation {
         flex-direction: column;
         align-items: center; 
         justify-content: center;
-    }
-    .pic-name .name{
-        margin-top: 40px;
-    }
-}
-
-@media (max-width: 480px) {
-    .pic-name {
         margin-top: 20px;
         margin: 10px;
     }
@@ -217,6 +209,7 @@ a:nth-child(4):hover~.animation {
         margin-top: 40px;
     }
 }
+
 
 .about-bio {
     text-align: center;
@@ -410,11 +403,16 @@ a:nth-child(4):hover~.animation {
     
 }
 
+#sec3 .rolr,
+#sec3 .desc {
+    max-width: 600px;
+}
+
 .section three .left {
     padding: 20px;
 }
 
-.right {
+.section three .right {
     padding: 20px;    
 }
 
