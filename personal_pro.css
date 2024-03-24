@@ -225,7 +225,6 @@ a:nth-child(4):hover~.animation {
 
 .biog{
     font-size: 20px;
-    text-align: center;
 }
 
 .about-box{
@@ -373,12 +372,15 @@ a:nth-child(4):hover~.animation {
 }
 
 @media (max-width: 768px) {
+    .about-bio {
+    text-align: center;
+}
     .edu-info,
     .pro-skills,
     .languages {
-        width: calc(100% - 100px); /* Adjust the total width as needed */
-        max-width: 300px; /* Adjust maximum width as needed */
-        margin: 25px; /* Adjust margin as needed */
+        width: calc(100% - 100px);
+        max-width: none;
+        margin: 25px;
     }
 }
 
@@ -468,4 +470,83 @@ a:nth-child(4):hover~.animation {
 #sec3 .more:active {
     box-shadow: black 2px 2px 0 0;
     transform: translate(2px, 2px);
+}
+
+.container {
+    max-width: 400px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff5;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+#sec4 h1 {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+textarea{
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+textarea {
+    resize: none;   
+}
+
+button[type="submit"] {
+    display: block;
+    width: 50%;
+    max-width: 200px; /* Adjust maximum width as needed */
+    margin: 0 auto; /* Center the button horizontally */
+    padding: 10px;
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.get-in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.img{
+    display: flex;
+    flex-direction: row;
 }
