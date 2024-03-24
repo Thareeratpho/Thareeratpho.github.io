@@ -88,6 +88,52 @@ a:nth-child(4):hover~.animation {
     background-color: #9b59b6;
 }
 
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        width: 100%;
+        max-width: 350px; /* Adjust max-width as needed */
+        margin-bottom: 30px;
+        justify-content: space-between; /* Adjust alignment */
+    }
+    
+    nav a {
+        font-size: 12px; /* Adjust font size */
+    }
+    
+    nav .animation {
+        border-radius: 50px; /* Adjust border radius */
+    }
+    
+    nav .start-home,
+    a:nth-child(1):hover~.animation {
+        width: 110px; /* Adjust width */
+        left: 0;
+        background-color: #1abc9c;
+    }
+
+    nav .start-about,
+    a:nth-child(2):hover~.animation {
+        width: 110px; /* Adjust width */
+        left: 110px;
+        background-color: #df25df;
+    }
+    
+    nav .start-blog,
+    a:nth-child(3):hover~.animation {
+        width: 110px; /* Adjust width */
+        left: 220px;
+        background-color: #3498db;
+    }
+    
+    nav .start-portefolio,
+    a:nth-child(4):hover~.animation {
+        width: 110px; /* Adjust width */
+        left: 330px;
+        background-color: #9b59b6;
+    }
+}
+
 .pic-name {
     display: flex;
     align-items: center;
@@ -154,12 +200,21 @@ a:nth-child(4):hover~.animation {
 @media (max-width: 768px) {
     .pic-name {
         flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+    }
+    .pic-name .name{
+        margin-top: 40px;
     }
 }
 
 @media (max-width: 480px) {
     .pic-name {
+        margin-top: 20px;
         margin: 10px;
+    }
+    .pic-name .name{
+        margin-top: 40px;
     }
 }
 
@@ -185,6 +240,7 @@ a:nth-child(4):hover~.animation {
 
 @media (max-width: 768px) {
     .aboutme, .biog {
+        text-align: center;
         margin: 10px;
     }
 }
@@ -387,9 +443,32 @@ a:nth-child(4):hover~.animation {
     }
 }
 
+#sec3 .more{
+    font-weight: 600;
+    font-size: 13px;
+    padding: 5px;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: black 4px 4px 0 0;
+    cursor: pointer;
+    margin-top: 10px;
+}
 
+#sec3 .more a {
+    text-decoration: none;
+    color: black;
+}
 
+#sec3 .more:hover {
+    background-color: #fff;
+}
 
-  
-  
-  
+#sec3 .more:active {
+    box-shadow: black 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
